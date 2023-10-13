@@ -1,43 +1,46 @@
 ---
+//components
 import Layout from "../components/Layout.astro";
 import Navbar from "../components/Navbar.astro";
 import Neon from "../components/Neon.astro";
 import AboutMe from "../components/AboutMe.astro";
-import Projects from "../components/Projects.astro";
 import Contact from "../components/Contact.astro";
 import Footer from "../components/Footer.astro";
+import Projects from "../components/Projects.astro";
+//fonts
+import "@fontsource/audiowide";
 ---
 
 <Layout>
-	<Navbar />
+  <Navbar />
 
-	<section id="neon">
-		<Neon />
-	</section>
+  <section id="neon">
+    <Neon />
+  </section>
 
-	<section
-		class="text-center font-bold text-lg md:text-2xl py-8 md:py-24 px-4 md:px-28 my-10 md:my-40 text-[#61d7dc] w-full leading-normal"
-	>
-		<p class="font-audiowide">
-			"We do not dare many things because they are difficult, but they are
-			difficult because we do not dare to do them."
-			<span class="uppercase ml-2 md:ml-3">Séneca</span>
-		</p>
-	</section>
+  <section
+    class="text-center font-bold text-lg md:text-2xl py-8 md:py-24 px-5 md:px-28 my-10 md:my-30 text-[#61d7dc] w-full leading-normal"
+  >
+    <p class="font-audiowide">
+      "No nos atrevemos a hacer cosas difíciles, pero son difíciles porque no
+      nos atrevemos a hacerlas."
+      <span class="uppercase ml-2 md:ml-3">Séneca</span>
+    </p>
+  </section>
 
-	<section id="about">
-		<AboutMe />
-	</section>
+  <section id="about">
+    <AboutMe />
+  </section>
 
-	<section id="projects">
-		<Projects />
-	</section>
+  <section id="projects">
+    <Projects />
+  </section>
 
-	<section id="contact">
-		<Contact />
-	</section>
+  <section id="contact">
+    <Contact />
+  </section>
 
-	<section id="footer">
-		<Footer />
-	</section>
+  <section id="footer">
+    <Footer />
+  </section>
 </Layout>

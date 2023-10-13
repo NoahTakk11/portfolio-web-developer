@@ -1,23 +1,26 @@
 ---
+import i18next, { t } from "i18next";
+import { Trans, HeadHrefLangs } from "astro-i18next/components";
+
 import "@fontsource/audiowide";
 ---
 
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Gonzalo villavicencio - Portfolio</title>
-    </head>
-    <body>
-        <slot />
+<html lang={i18next.language}>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gonzalo villavicencio - Portfolio</title>
+  </head>
+  <body>
+    <slot />
 
-        <style>
-            body {
-                background-image: url("../../public/endless-constellation.svg");
-                /* background: #1e272e; */
-                color: #fff;
-            }
-        </style>
-    </body>
+    <style>
+      body {
+        background: #19305a;
+        /* background: #1e272e; */
+        color: #fff;
+      }
+    </style>
+  </body>
 </html>

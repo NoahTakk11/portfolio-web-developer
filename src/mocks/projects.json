@@ -1,0 +1,22 @@
+{
+    "Image-Uploader": {
+        "name": "Image Uploader",
+        "description": "Con esta aplicación podrás subir imagenes a un storage y obtener su URL",
+        "url": "https://image-upload-yntm.onrender.com/",
+        "technologies": "TypeScript, React, TailwindCSS, Firebase"
+    },
+
+    "Book-Store": {
+        "name": "Book-Store",
+        "description": "Una sencilla interfaz de usuario que muestra libros disponibles e implementa algunas funcionalidades extras.",
+        "url": "https://noahtakk11.github.io/app-book-store/",
+        "technologies": "TypeScript, React, TailwindCSS, Zustand"
+    },
+
+    "Simple-Games-Online": {
+        "name": "Simple-Games-Online",
+        "description": "Diviértete jugando dos juegos estilo puzzles en tu navegador.",    
+        "url": "https://noahtakk11.github.io/simple-games-online/",
+        "technologies": "Astro, React, TailwindCSS, TypeScript, Zustand"
+    }
+}

@@ -1,40 +1,31 @@
-<div class="my-10 md:my-56">
-    <div class="mb-6 md:mb-10 px-4 md:px-20">
-        <h1 class="inline-block p-2.5 pb-5 text-white text-3xl md:text-4xl">
-            Project I Build
-        </h1>
-        <div
-            class="inline-block border-b-2 w-1/2 my-1 mx-5 border-[#A9A9A9] opacity-50"
-        >
-        </div>
-    </div>
+---
+import ProjectCard from "./ProjectCard.astro";
+import projects from "../mocks/projects.json";
 
+const PROJECTS = Object.values(projects).map((item) => item);
+console.log(PROJECTS);
+---
+
+<div class="px-4 md:px-20 container w-full my-8 md:my-20">
+  <div class="mb-10">
+    <h1 class="inline-block p-2.5 pb-5 text-white text-3xl md:text-4xl">
+      Mis Proyectos.
+    </h1>
     <div
-        class="w-full px-14 md:px-140 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6"
+      class="inline-block border-b-2 w-1/2 my-1 mx-5 border-[#A9A9A9] opacity-50"
     >
-        <div class="hover:scale-105">
-            <div
-                class="container border border-[#61d7dc] hover:border-white h-72 w-full md:w-60 bg-[#0a192f]"
-            >
-            </div>
-        </div>
-        <div class="hover:scale-105">
-            <div
-                class="container border border-[#61d7dc] hover:border-white h-72 w-full md:w-60 bg-[#0a192f]"
-            >
-            </div>
-        </div>
-        <div class="hover:scale-105">
-            <div
-                class="container border border-[#61d7dc] hover:border-white h-72 w-full md:w-60 bg-[#0a192f]"
-            >
-            </div>
-        </div>
-        <div class="hover:scale-105">
-            <div
-                class="container border border-[#61d7dc] hover:border-white h-72 w-full md:w-60 bg-[#0a192f]"
-            >
-            </div>
-        </div>
     </div>
+  </div>
+  <div class="grid grid-rows-1 md:grid-cols-4 gap-5 md:gap-1">
+    {
+      PROJECTS.map((item) => (
+        <ProjectCard
+          title={item.name}
+          description={item.description}
+          technologies={item.technologies}
+          url={item.url}
+        />
+      ))
+    }
+  </div>
 </div>
